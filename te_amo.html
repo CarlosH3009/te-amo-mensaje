@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para ti, mi amor 💖</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffe6f2, #f8d7e8);
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 700px;
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(233, 30, 99, 0.25);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #e91e63;
+      margin-bottom: 30px;
+      font-size: 2.6em;
+    }
+    .message {
+      margin: 40px 0;
+      padding: 35px;
+      background: #fff0f5;
+      border-radius: 20px;
+      font-size: 1.5em;
+      line-height: 1.5;
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #ffc1e3;
+      color: #333;
+    }
+    button {
+      background: #e91e63;
+      color: white;
+      font-size: 1.3em;
+      padding: 18px 40px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 8px 15px rgba(233, 30, 99, 0.3);
+    }
+    button:hover {
+      background: #c2185b;
+      transform: scale(1.05);
+    }
+    .heart {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>💖 Para ti, mi amor 💖</h1>
+    
+    <div class="message" id="mensaje">
+      Presiona el botón para recibir un mensaje de amor ❤️
+    </div>
+
+    <button onclick="mensajeAleatorio()">
+      🎲 Dame otro mensaje de amor
+    </button>
+  </div>
+
+  <script>
+    const mensajes = [
+      "Mi amor, cada día a tu lado es un regalo del universo ❤️",
+      "Eres lo mejor que me ha pasado en la vida. Te amo infinitamente.",
+      "Contigo he encontrado mi hogar y mi felicidad. Gracias por existir.",
+      "Eres mi persona favorita en todo el mundo 🌍💕",
+      "Felicidades por ser tan increíble, mi vida. Te elijo hoy y siempre.",
+      "Tu sonrisa ilumina mis días más oscuros. Te amo con todo mi corazón.",
+      "Gracias por amarme tal como soy. Eres mi todo.",
+      "No imagino mi vida sin ti. Eres mi mayor bendición.",
+      "Te amo más de lo que las palabras pueden expresar ❤️",
+      "Eres mi paz, mi aventura y mi mayor amor.",
+      "Cada segundo contigo vale más que mil días sin ti 💕",
+      "Eres mi sueño hecho realidad. Te amo muchísimo."
+    ];
+
+    function mensajeAleatorio() {
+      const randomIndex = Math.floor(Math.random() * mensajes.length);
+      document.getElementById("mensaje").innerHTML = mensajes[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
